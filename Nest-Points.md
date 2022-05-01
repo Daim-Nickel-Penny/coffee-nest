@@ -1,5 +1,11 @@
 # CLI Commands
 
+## Run in watch mode/ nodemon
+
+```
+npm run start:dev
+```
+
 ## Create a new Controller
 
 ```
@@ -84,3 +90,5 @@ e.g `nest g class coffees/dto/create-coffee.dto --no-spec`
   This function returning the type of the class we passed into it with all of the props set to optional. Also, inherits all the validation rules applied via decroators.
 
 - **WhiteList** make sure unwanted props are stripped out and removed
+
+- **Tranform:True in ValidationPipe** Autotransform Payloads to DTO instances. The body data in post req might not be of the type specified in the controller. So this transforms or type casts this to the correct type.
